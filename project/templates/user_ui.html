@@ -1,0 +1,372 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Site Metas -->
+<title>NOAWEB Solutions</title>
+<style>body {
+    background-color: #f9f9fa
+}
+
+.padding {
+    padding-left: 12%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.user-card-full {
+    overflow: hidden
+}
+
+.card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    border: none;
+    margin-bottom: 30px
+}
+
+.m-r-0 {
+    margin-right: 0px
+}
+
+.m-l-0 {
+    margin-left: 0px
+}
+
+.user-card-full .user-profile {
+    border-radius: 15px 0 0 5px
+}
+
+.bg-c-lite-green {
+    background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
+    background: linear-gradient(to right, #ee5a6f, #f29263)
+}
+
+.user-profile {
+    padding: 150px 0
+}
+
+.card-block {
+    padding: 1.50rem
+}
+
+.m-b-25 {
+    margin-bottom: 25px
+}
+
+.img-radius {
+    border-radius: 5px
+}
+
+h5
+ {
+    font-size: 14px
+}
+
+.card .card-block p {
+    line-height: 25px
+}
+
+@media only screen and (min-width: 1400px) {
+    p {
+        font-size: 14px
+    }
+}
+
+.card-block {
+    padding: 1.25rem
+}
+
+.b-b-default {
+    border-bottom: 1px solid #e0e0e0
+}
+
+.m-b-20 {
+    margin-bottom: 20px
+}
+
+.p-b-5 {
+    padding-bottom: 5px !important
+}
+
+.card .card-block p {
+    line-height: 25px
+}
+
+.m-b-10 {
+    margin-bottom: 10px
+}
+
+.text-muted {
+    color: #919aa3 !important
+}
+
+.b-b-default {
+    border-bottom: 1px solid #e0e0e0
+}
+
+.f-w-600 {
+    font-weight: 600
+}
+
+.m-b-20 {
+    margin-bottom: 20px
+}
+
+.m-t-40 {
+    margin-top: 20px
+}
+
+.p-b-5 {
+    padding-bottom: 5px !important
+}
+
+.m-b-10 {
+    margin-bottom: 10px
+}
+
+.m-t-40 {
+    margin-top: 20px
+}
+
+.user-card-full .social-link li {
+    display: inline-block
+}
+
+.user-card-full .social-link li a {
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+}
+
+</style>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+                                <script type='text/javascript'></script>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="{% static 'images/favicon.ico'%}" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png'%}">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+
+
+<!-- Site CSS -->
+<link rel="stylesheet" href="{% static 'style.css'%}">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{% static 'css/custom.css'%}">
+
+<!-- Modernizer for Portfolio -->
+<script src="{% static 'js/modernizer.js'%}"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ -->
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<header class="header header_style_01">
+    <nav class="megamenu navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logos/noa.png'%}" alt="image"  style="width:200px;height: 55px;"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active" href="{% url 'userui' %}">Profile</a></li>
+                    <li><a href="{% url 'website_checking' %}">Check Website</a></li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="page-content page-container" id="page-content" style=" background: -webkit-linear-gradient(left, #FF4E00, #EC9F05);" >
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="col-xl-6 col-md-12" >
+                <div class="card user-card-full" >
+                    <div class="row m-l-0 m-r-0" >
+                        <div class="col-sm-4 bg-c-lite-green user-profile" style="background: linear-gradient(to bottom, #000000 0%, #646464 100%);">
+                            <div class="card-block text-center text-white">
+                                <div class="m-b-25"> <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image"> </div>
+                                <h6 class="f-w-600" style="color: white"><b>NOA User</b></h6>
+                                <p style="color: white"><b>{{user.username}}</b></p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-8" style="background-color: white">
+                            <div class="card-block">
+                                <h5 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h5>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p class="m-b-10 f-w-600"><h4><b>User ID</b></h4></p>
+                                        <h5 class="text-muted f-w-400">{{user.id}}</h5>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p class="m-b-10 f-w-600"><h4><b>Username</b></h4></p>
+                                        <h5 class="text-muted f-w-400">{{user.username}}</h5
+                                            >
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p class="m-b-10 f-w-600"><h4><b>Email</b></h4></p>
+                                        <h5
+                                         class="text-muted f-w-400">{{user.email}}</h5
+                                         >
+                                    </div>
+                                </div>
+                                <h5
+                                 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Name</h5
+                                 >
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600"><h4><b>First Name</b></h4></p>
+                                        <h5
+                                         class="text-muted f-w-400">{{user.first_name}}</h5
+                                         >
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600"><h4><b>Last Name</b></h4></p>
+                                        <h5 class="text-muted f-w-400">{{user.last_name}}</h5>
+                                    </div>
+                                </div>
+                                <h5
+                                 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Recent</h5
+                                 >
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600"><h4><b>Last Login</b></h4></p>
+                                        <h5
+                                         class="text-muted f-w-400">{{user.last_login}}</h5
+                                         >
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600"><h4><b>Date of Joined</b></h4></p>
+                                        <h5
+                                         class="text-muted f-w-400">{{user.date_joined}}</h5
+                                         >
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-11">
+                                        <p class="m-b-10 f-w-600">
+                                            <h4><b><u><center>Profile Card</center></u></b></h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="widget clearfix">
+                    <div class="widget-title">
+                        <img src="{% static 'images/logos/noa2.png'%}" alt=""/>
+                    </div>
+                    <p>We are a group of final year students pursuing Bachelor's Degree in Computer Engineering from
+                        Vidyavardhini's College of Engineering and Technology. We aim to develop this website to help
+                        people stay away from cyber threats. We would also like to spread awareness regarding other
+                        social engineering attacks that may be harmful to people and make sure that they visit the
+                        websites that are legitmate and not fraud.</p>
+                </div><!-- end clearfix -->
+            </div><!-- end col -->
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="widget clearfix">
+                    <div class="widget-title">
+                        <h3>Pages</h3>
+                    </div>
+
+                    <ul class="footer-links hov">
+                        <li><a href="{% url 'home' %}">Home <span class="icon icon-arrow-right2"></span></a></li>
+                        <li><a href="{% url 'aboutus' %}">About <span class="icon icon-arrow-right2"></span></a></li>
+                        <li><a href="{% url 'services' %}">Services <span class="icon icon-arrow-right2"></span></a>
+                        </li>
+                        <li><a href="{% url 'login' %}">Login <span class="icon icon-arrow-right2"></span></a></li>
+                        <li><a href="{% url 'contact' %}">Contact <span class="icon icon-arrow-right2"></span></a></li>
+                    </ul><!-- end links -->
+                </div><!-- end clearfix -->
+            </div><!-- end col -->
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="footer-distributed widget clearfix">
+                    <div class="widget-title">
+                        <h3>Subscribe</h3>
+                        <p>In today's technological era, phishing attacks have increased to a high rate and people are
+                            being exploited. With an intent to stop these attacks, we have created this website that
+                            will allow users to detect phishing websites and stay away from them.</p>
+                    </div>
+
+                </div><!-- end clearfix -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</footer><!-- end footer -->
+
+<div class="copyrights">
+    <div class="container">
+        <div class="footer-distributed">
+            <div class="footer-left">
+                <p class="footer-company-name">All Rights Reserved.<a href="{% url 'home' %}">NOAWEB Solutions</a>
+            </div>
+
+
+        </div>
+    </div><!-- end container -->
+</div><!-- end copyrights -->
+
+<a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+<!-- ALL JS FILES -->
+<script src="{% static 'js/all.js'%}"></script>
+<!-- ALL PLUGINS -->
+<script src="{% static 'js/custom.js'%}"></script>
+<script src="{% static 'js/portfolio.js'%}"></script>
+<script src="{% static 'js/hoverdir.js'%}"></script>
+
+</body>
+</html>

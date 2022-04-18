@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>NOAWEB Solutions</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico'%}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png'%}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css'%}">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="{% static 'js/modernizer.js'%}"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+
+    
+    <header class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logos/noa.png'%}" alt="image"  style="width:200px;height: 55px;"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'aboutus' %}">About us</a></li>
+                        <li><a href="{% url 'services' %}">Our Services</a></li>
+                        <li><a href="{% url 'login' %}">Login</a></li>
+						<li><a class="active" href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+	
+   	<div class="banner-area banner-bg-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="banner">
+						<h2>Contact</h2>
+						<ul class="page-title-link">
+							<li><a href="{% url 'home' %}">Home</a></li>
+							<li><a href="{% url 'contact' %}">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="contact" class="section wb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Get in Touch</h3>
+                <p class="lead"> Get in touch with us to stay protected in this technological world. Please fill the form below for any suggestions or grievancies!</p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form  class="row" action="{% url 'contact' %}"method="post" autocomplete="off">
+                            {% csrf_token %}
+                            <fieldset class="row-fluid">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Give us more details.."></textarea>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                                    <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Submit</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+			
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+   <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <img src="{% static 'images/logos/noa2.png'%}" alt="" />
+                        </div>
+                        <p> We are a group of final year students pursuing Bachelor's Degree in Computer Engineering from Vidyavardhini's College of Engineering and Technology. We aim to develop this website to help people stay away from cyber threats. We would also like to spread awareness regarding other social engineering attacks that may be harmful to people and make sure that they visit the websites that are legitmate and not fraud.</p>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Pages</h3>
+                        </div>
+
+                        <ul class="footer-links hov">
+                        <li><a href="{% url 'home' %}">Home <span class="icon icon-arrow-right2"></span></a></li>
+                        <li><a href="{% url 'aboutus' %}">About <span class="icon icon-arrow-right2"></span></a></li>
+                        <li><a href="{% url 'services' %}">Services <span class="icon icon-arrow-right2"></span></a></li>
+                        <li><a href="{% url 'login' %}">Login <span class="icon icon-arrow-right2"></span></a></li>
+                        <li><a href="{% url 'contact' %}">Contact <span class="icon icon-arrow-right2"></span></a></li>
+                    </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-distributed widget clearfix">
+                        <div class="widget-title">
+                            <h3>Subscribe</h3>
+							<p>In today's technological era, phishing attacks have increased to a high rate and people are being exploited. With an intent to stop these attacks, we have created this website that will allow users to detect phishing websites and stay away from them.</p>
+                        </div>
+						                 
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">                   
+                    <p class="footer-company-name">All Rights Reserved. <a href="{% url 'home' %}">NOAWEB Solutions</a></p>
+                </div>
+
+                
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'js/all.js'%}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'js/custom.js'%}"></script>
+    <script src="{% static 'js/portfolio.js'%}"></script>
+    <script src="{% static 'js/hoverdir.js'%}"></script>
+
+</body>
+</html>
